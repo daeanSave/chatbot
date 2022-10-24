@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="입력해보셈" id="입력박스">
+    <button onclick="boom(document.getElementById('입력박스').value)">입력</button>
+
+    <script>
+        var name = '조성주'
+        function boom(문자) {
+            if(문자 === '안녕') {
+                alert('안녕하세요 ' + name + '님.')
+            } else if(문자 === '몇살이야?') {
+                alert('몰?루')
+            }
+        }
+    </script>
+</body>
+</html>
